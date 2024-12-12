@@ -135,6 +135,9 @@
             <h2>High Score</h2>
             <p id="high-score">0</p>
         </div>
+        <div class="score-box" onclick="resetGame()">
+            <h2>Try Again</h2>
+        </div>
     </div>
     <div class="game-container" id="game-container">
         <div class="overlay" id="game-over-overlay">
@@ -291,6 +294,7 @@
 
         function gameOver() {
             gameOverOverlay.classList.add('active');
+            alert("game over")
         }
 
         function resetGame() {
@@ -317,5 +321,8 @@
     </script>
 </body>
 </html>
+
+
+
 
 
